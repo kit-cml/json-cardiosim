@@ -1,0 +1,37 @@
+[
+   {
+		"title": "Drug Option",
+		"items": [
+			{
+				"title": "Dose Response Data",
+				"type": "file-picker",
+				"name": "experimental_file",
+				"default":"hill_experiment_data/drug_block_4channels.csv",
+				"_changes": "pathnya bukan di drug_block_4channels.csv, file-picker bukan file_picker"
+			},
+			{
+				"title": "Drug Name",
+				"type": "text",
+				"name": "drug_name",
+				"default":"quinidine"
+			},
+			{
+				"title": "Number of Samples",
+				"type": "number",
+				"name": "sample_size",
+				"default":20
+			},
+			{
+  				"title": "Fitting Type",
+  				"type": "combo-box", 
+  				"name": "fitting_type",
+  				"default": "Hill",
+				"_changes" : "there is no radion button, only combo-box",
+  				"options": [
+    				{ "label": "Hill", "value": "Hill" },
+    				{ "label": "hERG Dynamic", "value": "hERG" }
+  				]
+			}
+		]
+	}
+]

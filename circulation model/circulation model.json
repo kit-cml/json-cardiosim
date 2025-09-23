@@ -1,0 +1,79 @@
+[
+  {
+    "title": "CV Simulation Parameter",
+    "items": [
+      {
+        "title": "Time Step",
+        "type": "number",
+        "unit": "sec",
+        "name": "time_step",
+        "default": 0.667
+      },
+      {
+        "title": "Barometer",
+        "type": "combo-box",
+        "name": "baroreflex",
+        "default": "ON",
+        "options": [
+          { "label": "ON", "value": "ON" },
+          { "label": "OFF", "value": "OFF" }
+        ]
+      },
+      {
+        "title": "Volume reflex",
+        "type": "combo-box",
+        "name": "volume_reflex",
+        "default": "ON",
+        "options": [
+          { "label": "ON", "value": "ON" },
+          { "label": "OFF", "value": "OFF" }
+        ]
+      },
+      {
+        "title": "Total Blood Volume",
+        "type": "number",
+        "unit": "liter",
+        "name": "total_blood_volume",
+        "default": 5
+      }
+    ]
+  },
+  {
+    "title": "Flow Resistance",
+    "items": [
+      { "title": "Pulmonary Vein", "type": "number", "unit": "liter_per_sec", "name": "pulmonary_vein", "default": 0.0 },
+      { "title": "Mitral Valve", "type": "number", "unit": "liter_per_sec", "name": "mitral_valve", "default": 0.0 },
+      { "title": "Aortic Valve", "type": "number", "unit": "liter_per_sec", "name": "aortic_valve", "default": 0.0 },
+      { "title": "Upper Body 1", "type": "number", "unit": "liter_per_sec", "name": "upper_body_1", "default": 0.0 },
+      { "title": "Upper Body 2", "type": "number", "unit": "liter_per_sec", "name": "upper_body_2", "default": 0.0 },
+      { "title": "Splanic 1", "type": "number", "unit": "liter_per_sec", "name": "splanic_1", "default": 0.0 },
+      { "title": "Splanic 2", "type": "number", "unit": "liter_per_sec", "name": "splanic_2", "default": 0.0 },
+      { "title": "Lower Limb 1", "type": "number", "unit": "liter_per_sec", "name": "lower_limb_1", "default": 0.0 },
+      { "title": "Lower Limb 2", "type": "number", "unit": "liter_per_sec", "name": "lower_limb_2", "default": 0.0 },
+      { "title": "Kidney", "type": "number", "unit": "liter_per_sec", "name": "kidney", "default": 0.0 },
+      { "title": "Abdominal Vena Cava", "type": "number", "unit": "liter_per_sec", "name": "abdominal_vena_cava", "default": 0.0 },
+      { "title": "Superior Vena Cava", "type": "number", "unit": "liter_per_sec", "name": "superior_vena_cava", "default": 0.0 },
+      { "title": "Inferior Vena Cava", "type": "number", "unit": "liter_per_sec", "name": "inferior_vena_cava", "default": 0.0 },
+      { "title": "Pulmonic Valve", "type": "number", "unit": "liter_per_sec", "name": "pulmonic_valve", "default": 0.0 }
+    ]
+  },
+  {
+    "title": "Compliance",
+    "items": [
+      { "title": "Arteries", "type": "number", "unit": "liter_per_sec", "name": "arteries", "default": 0.0 },
+      { "title": "Lower Limb", "type": "number", "unit": "liter_per_sec", "name": "lower_limb", "default": 0.0 },
+      { "title": "Splanchnic", "type": "number", "unit": "liter_per_sec", "name": "splanchnic", "default": 0.0 },
+      { "title": "Upper Body", "type": "number", "unit": "liter_per_sec", "name": "upper_body", "default": 0.0 },
+      { "title": "Kidney", "type": "number", "unit": "liter_per_sec", "name": "kidney", "default": 0.0 },
+      { "title": "Abdominal Vena Cava", "type": "number", "unit": "liter_per_sec", "name": "abdominal_vena_cava", "default": 0.0 },
+      { "title": "Superior Vena Cava", "type": "number", "unit": "liter_per_sec", "name": "superior_vena_cava", "default": 0.0 },
+      { "title": "Inferior Vena Cava", "type": "number", "unit": "liter_per_sec", "name": "inferior_vena_cava", "default": 0.0 },
+      { "title": "Pulmonary Artery", "type": "number", "unit": "liter_per_sec", "name": "pulmonary_artery", "default": 0.0 },
+      { "title": "Pulmonary Vein", "type": "number", "unit": "liter_per_sec", "name": "pulmonary_vein", "default": 0.0 },
+      { "title": "LV diastole", "type": "number", "unit": "liter_per_sec", "name": "lv_diastole", "default": 0.0 },
+      { "title": "LV systole", "type": "number", "unit": "liter_per_sec", "name": "lv_systole", "default": 0.0 },
+      { "title": "RV diastole", "type": "number", "unit": "liter_per_sec", "name": "rv_diastole", "default": 0.0 },
+      { "title": "RV systole", "type": "number", "unit": "liter_per_sec", "name": "rv_systole", "default": 0.0 }
+    ]
+  }
+]

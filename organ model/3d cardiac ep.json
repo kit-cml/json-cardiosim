@@ -1,0 +1,299 @@
+[
+  {
+    "title": "Cell Profile",
+    "items": [
+       {
+        "title": "Cell Model",
+        "type": "combo-box",
+        "name": "cell_model",
+        "default": "CiPAORdv1.0_endo",
+		"options": [
+			{
+				"label": "O'Hara-Rudy static (2011) endocardium",
+				"value": "ORd-static_endo"
+			},
+			{
+				"label": "O'Hara-Rudy static (2011) epicardium",
+				"value": "ORd-static_epi"
+			},
+			{
+				"label": "O'Hara-Rudy static (2011) mid-myocardium",
+				"value": "ORd-static_myo"
+			},
+			{
+				"label": "O'Hara-Rudy IKr-dynamic (2017) endocardium",
+				"value": "CiPAORdv1.0_endo"
+			},
+			{
+				"label": "O'Hara-Rudy IKr-dynamic (2017) epicardium",
+				"value": "CiPAORdv1.0_epi"
+			},
+			{
+				"label": "O'Hara-Rudy IKr-dynamic (2017) mid-myocardium",
+				"value": "CiPAORdv1.0_myo"
+			},
+			{
+				"label": "Tomek et al. (2019) endocardium",
+				"value": "ToR-ORd_endo"
+			},
+			{
+				"label": "Tomek et al. (2019) epicardium",
+				"value": "ToR-ORd_epi"
+			},
+			{
+				"label": "Tomek et al. (2019) mid-myocardium",
+				"value": "ToR-ORd_myo"
+			},
+			{
+				"label": "Tomek model with dynamic chloride (2020) endocardium",
+				"value": "ToR-ORd-dynCl_endo"
+			},
+			{
+				"label": "Tomek model with dynamic chloride (2020) epicardium",
+				"value": "ToR-ORd-dynCl_epi"
+			},
+			{
+				"label": "Tomek model with dynamic chloride (2020) mid-myocardium",
+				"value": "ToR-ORd-dynCl_myo"
+			}
+		]
+      },
+      {
+        "title": "Solver",
+        "type": "combo-box",
+        "enabled": "false",
+        "name": "solver",
+        "default": "CVode",
+        "options": [
+          { "label": "Euler", "value": "Euler" },
+          { "label": "CVode", "value": "CVode" }
+        ]
+      },
+      {
+        "title": "Time Step",
+        "type": "number",
+        "unit": "ms",
+        "name": "time_step_min",
+        "default": 0.5
+      },
+      {
+        "title": "Time Step Maximum",
+        "type": "number",
+        "unit": "ms",
+        "name": "time_step_max",
+        "default": 2.0
+      },
+      {
+        "title": "Writing Time Step",
+        "type": "number",
+        "unit": "ms",
+        "name": "writing_step",
+        "default": 2.0
+      },
+      {
+        "title": "Genetic Variation",
+        "type": "combo-box",
+        "enabled": "false",
+        "name": "mutation",
+        "default": "Normal",
+        "options": [
+          { "label": "Normal", "value": "Normal" },
+          { "label": "A385", "value": "A385" },
+          { "label": "G504", "value": "G504" },
+          { "label": "A385+G504", "value": "A385+G504" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Stimulus Protocol",
+    "items": [
+      {
+        "title": "Number of Pacing",
+        "type": "number",
+        "enabled": "true",
+        "name": "numbers_pacing",
+        "default": 100
+      },
+      {
+        "title": "Number of Paces to Write Count",
+        "type": "number",
+        "enabled": "true",
+        "name": "numbers_pacing_write",
+        "default": 10
+      },
+      {
+        "title": "Cycle Length",
+        "type": "number",
+        "unit": "ms",
+        "name": "cycle_length",
+        "default": 2000
+      },
+      {
+        "title": "Stimulus Duration",
+        "type": "number",
+        "unit": "ms",
+        "name": "stimulus_duration",
+        "default": 0.5
+      },
+      {
+        "title": "Stimulus Amplitude Scale",
+        "type": "number",
+        "unit": "ms",
+        "name": "stimulus_amplitude_scale",
+        "default": 1.0
+      }
+    ]
+  },
+  {
+    "title": "Multi-Dimensional Stimulus Protocol",
+    "items": [
+      {
+        "title": "Computation Time",
+        "type": "number",
+        "unit": "ms",
+        "name": "maximum_time",
+        "default": 5000000
+      },
+      {
+        "title": "Stimulus Mode",
+        "type": "combo-box",
+        "name": "stimulus_mode",
+        "default": "S1 Stimulus",
+        "options": [
+          { "label": "S1 Stimulus", "value": "S1 Stimulus" },
+          { "label": "S1S2 Stimulus", "value": "S1S2 Stimulus" }
+        ]
+      },
+      {
+        "title": "GNa",
+        "type": "steeper",
+        "name": "gna_scale",
+        "default": 1.5
+      }
+    ]
+  },
+  {
+    "title": "Mesh Profile",
+    "items": [
+      {
+        "title": "Mesh File (INP)",
+        "type": "file-picker",
+        "name": "mesh_file",
+        "default": "./mesh_elect/vent/human_hf_214319/heart_het.inp"
+      },
+      {
+        "title": "Fiber Mesh File (INP)",
+        "type": "file-picker",
+        "name": "fiber_mesh",
+        "default": "fiber.inp"
+      },
+      {
+        "title": "Surface Mesh File",
+        "type": "file-picker",
+        "name": "surface_file",
+        "default": "./mesh_elect/vent/human_hf_214319/surface.inp"
+      },
+      {
+        "title": "Mesh Type",
+        "type": "combo-box",
+        "name": "mesh_type",
+        "default": "tet",
+        "options": [
+          { "label": "tet", "value": "tet" },
+          { "label": "tetfiber", "value": "tetfiber" },
+          { "label": "square", "value": "square" },
+          { "label": "triangle", "value": "triangle" }
+        ]
+      },
+      {
+        "title": "Dimension",
+        "type": "combo-box",
+        "name": "mesh_dimension",
+        "default": "3",
+        "options": [
+          { "label": "2", "value": "2" },
+          { "label": "3", "value": "3" }
+        ]
+      },
+      {
+        "title": "VTK Output",
+        "type": "combo-box",
+        "name": "vtk_output",
+        "default": "solid",
+        "options": [
+          { "label": "solid", "value": "solid" },
+          { "label": "surface", "value": "surface" }
+        ]
+      },
+      {
+        "title": "S1 Stimulus Nodes",
+        "type": "file-picker",
+        "name": "pace_s1_file",
+        "default": "./mesh_elect/vent/human_hf_214319/heart_apex.dat"
+      },
+      {
+        "title": "S2 Stimulus Nodes",
+        "type": "file-picker",
+        "name": "pace_s2_file",
+        "default": "./mesh_elect/vent/human_hf_214319/heart_L.dat"
+      }
+    ]
+  },
+  {
+    "title": "Diffusion Profile",
+    "items": [
+      {
+        "title": "Diffusion Scale",
+        "type": "number",
+        "name": "diffusion_scale",
+        "default": 3.0
+      },
+      {
+        "title": "Diffusion Scale Fiber",
+        "type": "number",
+        "name": "diffusion_scale_fiber",
+        "default": 0.1
+      },
+      {
+        "title": "Diffusion Mode",
+        "type": "combo-box",
+        "name": "diffusion_mode",
+        "default": "normal",
+        "options": [
+          { "label": "normal", "value": "normal" },
+          { "label": "fibrosis", "value": "fibrosis" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Drug Profile",
+    "items": [
+      {
+        "title": "Drug Name",
+        "type": "text",
+        "name": "drug_name",
+        "default": "bepridil"
+      },
+      {
+        "title": "Drug Concentrations",
+        "type": "text",
+        "name": "drug_concentrations",
+        "default": "33.0,66.0,99.0,132.0"
+      },
+      {
+        "title": "Hill File",
+        "type": "file-picker",
+        "name": "hill_file",
+        "default": "bepridil/IC50_samples.csv"
+      },
+      {
+        "title": "hERG Dynamic File",
+        "type": "file-picker",
+        "name": "hERG_file",
+        "default": "bepridil/boot_pars.csv"
+      }
+    ]
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "title": "HD Simulation Parameter",
+    "items": [
+      {
+        "title": "Computation Time",
+        "type": "number",
+        "unit": "sec",
+        "name": "computation_time",
+        "default": 10
+      },
+      {
+        "title": "Treatment Time",
+        "type": "number",
+        "unit": "sec",
+        "name": "treatment_time",
+        "default": 6
+      },
+      {
+        "title": "Time Step",
+        "type": "number",
+        "unit": "sec",
+        "name": "time_step",
+        "default": 0.667
+      },
+      {
+        "title": "Dialysate Regeneration",
+        "type": "combo-box",
+        "name": "dialysate_regeneration",
+        "default": "ON",
+        "options": [
+          { "label": "ON", "value": "ON" },
+          { "label": "OFF", "value": "OFF" }
+        ]
+      },
+      {
+        "title": "Flow Type",
+        "type": "combo-box",
+        "name": "flow_type",
+        "default": "Continuous",
+        "options": [
+          { "label": "Continuous", "value": "Continuous" },
+          { "label": "Pulsatile", "value": "Pulsatile" }
+        ]
+      },
+      {
+        "title": "CRF",
+        "type": "combo-box",
+        "name": "crf",
+        "default": "ON",
+        "options": [
+          { "label": "ON", "value": "ON" },
+          { "label": "OFF", "value": "OFF" }
+        ]
+      },
+      {
+        "title": "Profiled Dialysis",
+        "type": "number",
+        "unit": "liter_per_sec",
+        "name": "profiled_dialysis",
+        "default": 0.0
+      },
+      {
+        "title": "Blood Flow Rate",
+        "type": "number",
+        "unit": "liter_per_sec",
+        "name": "blood_flow_rate",
+        "default": 0.0
+      },
+      {
+        "title": "Dialysate Flow Rate",
+        "type": "number",
+        "unit": "liter_per_sec",
+        "name": "dialysate_flow_rate",
+        "default": 0.0
+      }
+    ]
+  }
+]

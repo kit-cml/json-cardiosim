@@ -1,0 +1,195 @@
+[
+  {
+    "title": "Stimulus Protocol",
+    "items": [
+      {
+        "title": "Cycle Length",
+        "type": "number",
+        "unit": "msec",
+        "name": "cycle_length",
+        "default": 2000.0
+      },
+      {
+        "title": "Paces",
+        "type": "number",
+        "name": "number_pacing",
+        "default": 1000
+      },
+      {
+        "title": "Pacing Write Count",
+        "type": "number",
+        "name": "number_pacing_write",
+        "default": 10
+      },
+      {
+        "title": "Stimulus Duration",
+        "type": "number",
+        "unit": "msec",
+        "name": "stimulus_duration",
+        "default": 0.5
+      },
+      {
+        "title": "Stimulus Amplitude Scale",
+        "type": "number",
+        "name": "stimulus_amplitude_scale",
+        "default": 1.0
+      }
+    ]
+  },
+  {
+    "title": "Cell Parameters",
+    "items": [
+      {
+        "title": "Cell Model",
+        "type": "combo-box",
+        "name": "cell_model",
+        "default": "ORd-static_epi",
+        "options": [
+          { "label": "O'Hara-Rudy static (2011) endocardium", "value": "ORd-static_endo" },
+          { "label": "O'Hara-Rudy static (2011) epicardium", "value": "ORd-static_epi" },
+          { "label": "O'Hara-Rudy static (2011) mid-myocardium", "value": "ORd-static_myo" },
+          { "label": "O'Hara-Rudy IKr-dynamic (2017) endocardium", "value": "CiPAORdv1.0_endo" },
+          { "label": "O'Hara-Rudy IKr-dynamic (2017) epicardium", "value": "CiPAORdv1.0_epi" },
+          { "label": "O'Hara-Rudy IKr-dynamic (2017) mid-myocardium", "value": "CiPAORdv1.0_myo" },
+          { "label": "Tomek et al. (2019) endocardium", "value": "ToR-ORd_endo" },
+          { "label": "Tomek et al. (2019) epicardium", "value": "ToR-ORd_epi" },
+          { "label": "Tomek et al. (2019) mid-myocardium", "value": "ToR-ORd_myo" },
+          { "label": "Tomek model with dynamic chloride (2020) endocardium", "value": "ToR-ORd-dynCl_endo" },
+          { "label": "Tomek model with dynamic chloride (2020) epicardium", "value": "ToR-ORd-dynCl_epi" },
+          { "label": "Tomek model with dynamic chloride (2020) mid-myocardium", "value": "ToR-ORd-dynCl_myo" }
+        ]
+      },
+      {
+        "title": "Solver",
+        "type": "label",
+        "name": "solver_type",
+        "default": "CVode"
+      },
+      {
+        "title": "Time Step",
+        "type": "number",
+        "unit": "msec",
+        "name": "time_step_min",
+        "default": 0.5
+      },
+      {
+        "title": "Time Step Maximum",
+        "type": "number",
+        "unit": "msec",
+        "name": "time_step_max",
+        "default": 2.0
+      },
+      {
+        "title": "Writing Step",
+        "type": "number",
+        "unit": "msec",
+        "name": "writing_step",
+        "default": 2.0
+      },
+      {
+        "title": "Genetic Variation",
+        "type": "combo-box",
+        "enabled": "true",
+        "name": "mutation",
+        "default": "Normal",
+        "options": [
+          {
+            "label": "Normal",
+            "value": "Normal"
+          },
+          {
+            "label": "A385",
+            "value": "A385"
+          },
+          {
+            "label": "G504",
+            "value": "G504"
+          },
+          {
+            "label": "A385+G504",
+            "value": "A385+G504"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Drug Parameters",
+    "items": [
+      {
+        "title": "Drug Name",
+        "type": "text",
+        "name": "drug_name",
+        "default": "quinidine"
+      },
+      {
+        "title": "Drug Concentrations",
+        "type": "text",
+        "tooltip": "Comma-separated list of concentrations (e.g., 3237,6474) in nM used for simulation.",
+        "name": "drug_concentrations",
+        "default": "3237,6474"
+      },
+      {
+        "title": "Hill File",
+        "type": "file-picker",
+        "name": "hill_file",
+        "default": "./chantest_hill/quinidine/IC50_samples10.csv"
+      },
+      {
+      "title": "hERG File",
+      "type": "file-picker",
+      "name": "herg_file",
+      "default": "./chantest_herg/quinidine/boot_pars10.csv",
+      "visibleIf": {
+        "cell_model": [
+          "CiPAORdv1.0_endo",
+          "CiPAORdv1.0_epi",
+          "CiPAORdv1.0_myo"
+        ]
+      }
+    }
+    ]
+  },
+  {
+    "title": "Variability Parameters",
+    "type" : "hide",
+    "items": [
+      {
+        "title": "Conductance Variability",
+        "type": "number",
+        "name": "is_cvar",
+        "default": 0
+      },
+      {
+        "title": "CVar File",
+        "type": "text",
+        "name": "cvar_file",
+        "default": "./population/indi_1sample"
+      }
+    ]
+  },
+  {
+    "title": "Simulation Setting",
+    "items": [
+      {
+        "title": "Simulation Type",
+        "type": "combo-box",
+        "name": "simulation_type",
+        "default": "cpu",
+        "options": [
+          { "label": "CPU", "value": "cpu" },
+          { "label": "GPU", "value": "gpu" }
+        ]
+      },
+      {
+        "title": "Number of CPU",
+        "type": "number",
+        "name": "number_of_cpu",
+        "default": 10,
+        "visibleIf": {
+          "simulation_type": "cpu"
+        }
+      }
+    ]
+  }
+]
