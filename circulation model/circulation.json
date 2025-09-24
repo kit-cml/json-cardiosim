@@ -1,0 +1,120 @@
+[
+  {
+    "title": "Simulation Control",
+    "items": [
+      {
+        "title": "Simulation Module",
+        "type": "combo-box",
+        "name": "m_sim",
+        "default": 1,
+        "options": [
+          { "label": "Hemodialysis", "value": 0 },
+          { "label": "Cardiovascular", "value": 1 },
+          { "label": "HD + CV", "value": 2 }
+        ]
+      },
+      {
+        "title": "Time Step (dt)",
+        "type": "number",
+        "unit": "s",
+        "name": "dt",
+        "default": 0.001
+      },
+      {
+        "title": "Paces",
+        "type": "number",
+        "name": "paces",
+        "default": 100
+      },
+      {
+        "title": "Writing Step (dtw)",
+        "type": "number",
+        "unit": "s",
+        "name": "dtw",
+        "default": 0.008
+      },
+      {
+        "title": "Heart Rate",
+        "type": "number",
+        "unit": "bpm",
+        "name": "hr",
+        "default": 72.0
+      },
+      {
+        "title": "Autonomy Nervous System",
+        "type": "combo-box",
+        "name": "reflexesOn",
+        "default": 0,
+        "options": [
+          { "label": "Off", "value": 0 },
+          { "label": "On", "value": 1 }
+        ]
+      },
+      {
+        "title": "Thoracic Pressure",
+        "type": "number",
+        "unit": "mmHg",
+        "name": "pth",
+        "default": -4.0
+      }
+    ]
+  },
+  {
+    "title": "Scaling Parameters",
+    "items": [
+      {
+        "title": "Resistance Scale",
+        "type": "number",
+        "name": "r_scale",
+        "default": 1.0
+      },
+      {
+        "title": "Compliance Scale",
+        "type": "number",
+        "name": "c_scale",
+        "default": 1.0
+      }
+    ]
+  },
+  {
+    "title": "Initial Volumes",
+    "items": [
+      { "title": "LV Volume", "type": "number", "unit": "mL", "name": "Vl0", "default": 50.0 },
+      { "title": "RV Volume", "type": "number", "unit": "mL", "name": "Vr0", "default": 50.0 },
+      { "title": "Arterial Volume", "type": "number", "unit": "mL", "name": "Va0", "default": 715.0 },
+      { "title": "Legs Volume", "type": "number", "unit": "mL", "name": "Vll01", "default": 350.0 },
+      { "title": "Splanchnic Volume", "type": "number", "unit": "mL", "name": "Vsp0", "default": 1300.0 },
+      { "title": "Upper Body Volume", "type": "number", "unit": "mL", "name": "Vup0", "default": 650.0 },
+      { "title": "Kidney Volume", "type": "number", "unit": "mL", "name": "Vk0", "default": 150.0 },
+      { "title": "SVC Volume", "type": "number", "unit": "mL", "name": "Vsup0", "default": 10.0 },
+      { "title": "IVC Volume", "type": "number", "unit": "mL", "name": "Vinf0", "default": 75.0 },
+      { "title": "AVC Volume", "type": "number", "unit": "mL", "name": "Vab0", "default": 250.0 },
+      { "title": "Pulmonary Artery Volume", "type": "number", "unit": "mL", "name": "VPa0", "default": 90.0 },
+      { "title": "Pulmonary Vein Volume", "type": "number", "unit": "mL", "name": "VPv0", "default": 490.0 },
+      { "title": "Blood Volume Total", "type": "number", "unit": "mL", "name": "bv", "default": 5700.0 }
+    ]
+  },
+  {
+    "title": "Resistances",
+    "items": [
+      { "title": "Splanchnic Resistance", "type": "number", "unit": "mmHg·s/mL", "name": "Rsp", "default": 3.0 },
+      { "title": "Legs Resistance", "type": "number", "unit": "mmHg·s/mL", "name": "Rll1", "default": 3.6 },
+      { "title": "Upper Body Resistance", "type": "number", "unit": "mmHg·s/mL", "name": "Rup", "default": 3.9 },
+      { "title": "Kidney Resistance", "type": "number", "unit": "mmHg·s/mL", "name": "Rk", "default": 8.2 }
+    ]
+  },
+  {
+    "title": "Compliances",
+    "items": [
+      { "title": "Splanchnic Compliance", "type": "number", "unit": "mL/mmHg", "name": "Csp", "default": 55.0 },
+      { "title": "Legs Compliance", "type": "number", "unit": "mL/mmHg", "name": "Cll1", "default": 20.0 },
+      { "title": "Upper Body Compliance", "type": "number", "unit": "mL/mmHg", "name": "Cup", "default": 8.0 },
+      { "title": "Kidney Compliance", "type": "number", "unit": "mL/mmHg", "name": "Ck", "default": 5.0 },
+      { "title": "AVC Compliance", "type": "number", "unit": "mL/mmHg", "name": "Cab", "default": 25.0 },
+      { "title": "LV Diastolic Compliance", "type": "number", "unit": "mL/mmHg", "name": "Cldias", "default": 10.0 },
+      { "title": "LV Systolic Compliance", "type": "number", "unit": "mL/mmHg", "name": "Clsys", "default": 0.4 },
+      { "title": "RV Diastolic Compliance", "type": "number", "unit": "mL/mmHg", "name": "Crdias", "default": 20.0 },
+      { "title": "RV Systolic Compliance", "type": "number", "unit": "mL/mmHg", "name": "Crsys", "default": 1.2 }
+    ]
+  }
+]
