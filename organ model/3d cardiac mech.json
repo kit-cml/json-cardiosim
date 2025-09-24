@@ -120,6 +120,7 @@
         "name": "genetic variation",
         "default": "Normal"
       } 
+    ]
   },
   {
     "title": "Mesh Profile",
