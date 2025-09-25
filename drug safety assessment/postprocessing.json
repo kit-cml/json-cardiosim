@@ -153,9 +153,9 @@
     "title": "Postprocessing",
     "items": [
       {
-        "title": "Initial Value Files",
+        "title": "Initial Values Files",
         "type": "file-picker",
-        "name": "initial_value_zip_file",
+        "name": "initial_values_zip_file",
         "default": "initial_values.zip"
       }
     ]
