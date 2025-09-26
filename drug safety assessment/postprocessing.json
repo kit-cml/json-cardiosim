@@ -11,15 +11,15 @@
       },
       {
         "title": "Paces",
-        "type": "number",
+        "type": "hide",
         "name": "number_pacing",
-        "default": 1000
+        "default": 1
       },
       {
         "title": "Pacing Write Count",
-        "type": "number",
+        "type": "hide",
         "name": "number_pacing_write",
-        "default": 10
+        "default": 1
       },
       {
         "title": "Stimulus Duration",
@@ -153,9 +153,9 @@
     "title": "Postprocessing",
     "items": [
       {
-        "title": "Initial Value Files",
+        "title": "Initial Values Files",
         "type": "file-picker",
-        "name": "initial_value_zip_file",
+        "name": "initial_values_zip_file",
         "default": "initial_values.zip"
       }
     ]
