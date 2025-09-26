@@ -43,7 +43,7 @@
         "title": "Cell Model",
         "type": "combo-box",
         "name": "cell_model",
-        "default": "ORd-static_epi",
+        "default": "CiPAORdv1.0_endo",
         "options": [
           { "label": "O'Hara-Rudy static (2011) endocardium", "value": "ORd-static_endo" },
           { "label": "O'Hara-Rudy static (2011) epicardium", "value": "ORd-static_epi" },
@@ -155,7 +155,7 @@
       {
         "title": "Initial Values Files",
         "type": "file-picker",
-        "name": "initial_values_zip_file",
+        "name": "initial_values_zips/quinidine_CiPAORdv1.0_endo_initial_values.zip",
         "default": "initial_values.zip"
       }
     ]

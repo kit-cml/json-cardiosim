@@ -58,9 +58,11 @@
       },
       {
         "title": "GNa",
-        "type": "steeper",
+        "type": "stepper",
         "name": "gna_scale",
-        "default": 1.5
+        "default": 1.5,
+        "min": "0.001",
+		"max": "1000"
       }
     ]
   },
