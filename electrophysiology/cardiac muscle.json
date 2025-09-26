@@ -99,7 +99,7 @@
 	"items": [
 		{
 			"title": "GKs",
-			"type": "steeper",
+			"type": "stepper",
 			"name": "gks_scale",
 			"default": 1,
 			"min": "0.001",
@@ -107,7 +107,7 @@
 		},
 		{
 			"title": "GKr",
-			"type": "steeper",
+			"type": "stepper",
 			"name": "gkr_scale",
 			"default": 1,
 			"min": "0.001",
@@ -115,7 +115,7 @@
 		},
 		{
 			"title": "GK1",
-			"type": "steeper",
+			"type": "stepper",
 			"name": "gk1_scale",
 			"default": 1,
 			"min": "0.001",
@@ -123,7 +123,7 @@
 		},
 		{
 			"title": "Gto",
-			"type": "steeper",
+			"type": "stepper",
 			"name": "gto_scale",
 			"default": 1,
 			"min": "0.001",
@@ -131,7 +131,7 @@
 		},
 		{
 			"title": "PCa",
-			"type": "steeper",
+			"type": "stepper",
 			"name": "pca_scale",
 			"default": 1,
 			"min": "0.001",
@@ -139,7 +139,7 @@
 		},
 		{
 			"title": "GNa",
-			"type": "steeper",
+			"type": "stepper",
 			"name": "gna_scale",
 			"default": 1,
 			"min": "0.001",
@@ -147,7 +147,7 @@
 		},
 		{
 			"title": "GNaL",
-			"type": "steeper",
+			"type": "stepper",
 			"name": "gnal_scale",
 			"default": 1,
 			"min": "0.001",
@@ -155,7 +155,7 @@
 		},
 		{
 			"title": "GNab",
-			"type": "steeper",
+			"type": "stepper",
 			"name": "gnab_scale",
 			"default": 1,
 			"min": "0.001",
@@ -163,7 +163,7 @@
 		},
 		{
 			"title": "GCab",
-			"type": "steeper",
+			"type": "stepper",
 			"name": "gcab_scale",
 			"default": 1,
 			"min": "0.001",
@@ -171,7 +171,7 @@
 		},
 		{
 			"title": "Gncx",
-			"type": "steeper",
+			"type": "stepper",
 			"name": "gncx_scale",
 			"default": 1,
 			"min": "0.001",
