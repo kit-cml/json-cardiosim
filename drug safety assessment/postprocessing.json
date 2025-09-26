@@ -155,8 +155,8 @@
       {
         "title": "Initial Values Files",
         "type": "file-picker",
-        "name": "initial_values_zips/quinidine_CiPAORdv1.0_endo_initial_values.zip",
-        "default": "initial_values.zip"
+        "name": "initial_values_zip_file",
+        "default": "initial_values_zips/quinidine_CiPAORdv1.0_endo_initial_values.zip"
       }
     ]
   }, 
