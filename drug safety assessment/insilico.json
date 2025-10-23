@@ -43,7 +43,7 @@
         "title": "Cell Model",
         "type": "combo-box",
         "name": "cell_model",
-        "default": "ORd-static_epi",
+        "default": "CiPAORdv1.0_endo",
         "options": [
           { "label": "O'Hara-Rudy static (2011) endocardium", "value": "ORd-static_endo" },
           { "label": "O'Hara-Rudy static (2011) epicardium", "value": "ORd-static_epi" },
