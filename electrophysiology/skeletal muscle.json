@@ -1,0 +1,115 @@
+[
+  {
+    "title": "Stimulus Protocol",
+    "items": [
+      {
+        "title": "Cycle Length",
+        "type": "number",
+        "unit": "msec",
+        "name": "cycle_length",
+        "default": 1000.0
+      },
+      {
+        "title": "Paces",
+        "type": "number",
+        "name": "number_pacing",
+        "default": 1
+      },
+      {
+        "title": "Pacing Write Count",
+        "type": "number",
+        "name": "number_pacing_write",
+        "default": 1
+      },
+      {
+        "title": "Stimulus Duration",
+        "type": "number",
+        "unit": "msec",
+        "name": "stimulus_duration",
+        "default": 0.5
+      },
+      {
+        "title": "Stimulus Amplitude Scale",
+        "type": "number",
+        "name": "stimulus_amplitude_scale",
+        "default": 1.0
+      }
+    ]
+  },
+  {
+    "title": "Cell Parameters",
+    "items": [
+      {
+        "title": "Cell Model",
+        "type": "combo-box",
+        "name": "cell_model",
+        "default": "shorten-2007",
+        "options": [
+          { "label": "Shorten, O'Callaghan, Davidson, Soboleva, 2007", "value": "shorten-2007" }
+        ]
+      },
+      {
+        "title": "Solver",
+        "type": "label",
+        "name": "solver_type",
+        "default": "CVode"
+      },
+      {
+        "title": "Time Step",
+        "type": "number",
+        "unit": "msec",
+        "name": "time_step_min",
+        "default": 0.1
+      },
+      {
+        "title": "Time Step Maximum",
+        "type": "number",
+        "unit": "msec",
+        "name": "time_step_max",
+        "default": 0.1
+      },
+      {
+        "title": "Writing Step",
+        "type": "number",
+        "unit": "msec",
+        "name": "writing_step",
+        "default": 2.0
+      },
+      {
+        "title": "Genetic Variation",
+        "type": "label",
+        "name": "genetic variation",
+        "default": "Normal"
+      }
+    ]
+  },
+  {
+	"title": "Ionic Conductance Scaling",
+	"items": [
+		{
+			"title": "GK",
+			"type": "stepper",
+			"name": "gk_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "GNa",
+			"type": "stepper",
+			"name": "gna_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "GCl",
+			"type": "stepper",
+			"name": "gcl_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		}
+	]
+  }
+]
