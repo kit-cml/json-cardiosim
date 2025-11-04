@@ -43,9 +43,9 @@
         "title": "Cell Model",
         "type": "combo-box",
         "name": "cell_model",
-        "default": "Shorten",
+        "default": "Tong",
         "options": [
-          { "label": "Shorten, O'Callaghan, Davidson, Soboleva, 2007", "value": "Shorten" }
+          { "label": "Tong, Choi, Kharche, Holden, Zhang, Taggart (2011)", "value": "Tong" }
         ]
       },
       {
