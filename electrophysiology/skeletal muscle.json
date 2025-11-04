@@ -43,9 +43,9 @@
         "title": "Cell Model",
         "type": "combo-box",
         "name": "cell_model",
-        "default": "shorten-2007",
+        "default": "Shorten",
         "options": [
-          { "label": "Shorten, O'Callaghan, Davidson, Soboleva, 2007", "value": "shorten-2007" }
+          { "label": "Shorten, O'Callaghan, Davidson, Soboleva, 2007", "value": "Shorten" }
         ]
       },
       {
