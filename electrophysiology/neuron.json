@@ -43,9 +43,9 @@
         "title": "Cell Model",
         "type": "combo-box",
         "name": "cell_model",
-        "default": "Hodgkin-Huxley-1952",
+        "default": "Hodgkin-Huxley",
         "options": [
-          { "label": "Hodgkin-Huxley (1952)", "value": "Hodgkin-Huxley-1952" }
+          { "label": "Hodgkin-Huxley (1952)", "value": "Hodgkin-Huxley" }
         ]
       },
       {
