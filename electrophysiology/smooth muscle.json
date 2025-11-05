@@ -87,9 +87,89 @@
 	"title": "Ionic Conductance Scaling",
 	"items": [
 		{
-			"title": "GNa",
+			"title": "gcal",
+			"type": "stepper",
+			"name": "pca_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "gcat",
+			"type": "stepper",
+			"name": "gcat_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "gna",
 			"type": "stepper",
 			"name": "gna_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "gh",
+			"type": "stepper",
+			"name": "gh_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "gk1",
+			"type": "stepper",
+			"name": "gk1_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "gk2",
+			"type": "stepper",
+			"name": "gk2_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "gka",
+			"type": "stepper",
+			"name": "gka_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "gkca",
+			"type": "stepper",
+			"name": "gkca_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "gb",
+			"type": "stepper",
+			"name": "gb_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "gcl",
+			"type": "stepper",
+			"name": "gcl_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "gns",
+			"type": "stepper",
+			"name": "gns_scale",
 			"default": 1,
 			"min": "0.001",
 			"max": "1000"

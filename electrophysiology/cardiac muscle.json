@@ -154,17 +154,17 @@
 			"max": "1000"
 		},
 		{
-			"title": "GNab",
+			"title": "PNab",
 			"type": "stepper",
-			"name": "gnab_scale",
+			"name": "pnab_scale",
 			"default": 1,
 			"min": "0.001",
 			"max": "1000"
 		},
 		{
-			"title": "GCab",
+			"title": "PCab",
 			"type": "stepper",
-			"name": "gcab_scale",
+			"name": "pcab_scale",
 			"default": 1,
 			"min": "0.001",
 			"max": "1000"
