@@ -87,13 +87,29 @@
 	"title": "Ionic Conductance Scaling",
 	"items": [
 		{
-			"title": "GNa",
+			"title": "g_Na",
 			"type": "stepper",
 			"name": "gna_scale",
 			"default": 1,
 			"min": "0.001",
 			"max": "1000"
 		},
+		{
+			"title": "g_K",
+			"type": "stepper",
+			"name": "gk_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "g_L",
+			"type": "stepper",
+			"name": "gcl_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		}
 	]
   }
 ]
