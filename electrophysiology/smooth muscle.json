@@ -7,7 +7,7 @@
         "type": "number",
         "unit": "msec",
         "name": "cycle_length",
-        "default": 1000.0
+        "default": 7000.0
       },
       {
         "title": "Paces",
