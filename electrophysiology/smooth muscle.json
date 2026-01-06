@@ -7,7 +7,7 @@
         "type": "number",
         "unit": "msec",
         "name": "cycle_length",
-        "default": 7000.0
+        "default": 5000.0
       },
       {
         "title": "Paces",
@@ -26,7 +26,7 @@
         "type": "number",
         "unit": "msec",
         "name": "stimulus_duration",
-        "default": 0.5
+        "default": 2000.0
       },
       {
         "title": "Stimulus Amplitude Scale",
@@ -73,7 +73,7 @@
         "type": "number",
         "unit": "msec",
         "name": "writing_step",
-        "default": 2.0
+        "default": 0.1
       },
       {
         "title": "Genetic Variation",
