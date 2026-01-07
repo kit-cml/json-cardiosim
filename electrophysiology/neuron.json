@@ -19,14 +19,14 @@
         "title": "Pacing Write Count",
         "type": "number",
         "name": "number_pacing_write",
-        "default": 1
+        "default": 10
       },
       {
         "title": "Stimulus Duration",
         "type": "number",
         "unit": "msec",
         "name": "stimulus_duration",
-        "default": 1
+        "default": 1.0
       },
       {
         "title": "Stimulus Amplitude Scale",

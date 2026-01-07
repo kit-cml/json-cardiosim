@@ -7,19 +7,19 @@
         "type": "number",
         "unit": "msec",
         "name": "cycle_length",
-        "default": 2000.0
+        "default": 500.0
       },
       {
         "title": "Paces",
         "type": "number",
         "name": "number_pacing",
-        "default": 1000
+        "default": 10
       },
       {
         "title": "Pacing Write Count",
         "type": "number",
         "name": "number_pacing_write",
-        "default": 2
+        "default": 10
       },
       {
         "title": "Stimulus Duration",
