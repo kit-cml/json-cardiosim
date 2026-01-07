@@ -70,21 +70,21 @@
         "type": "number",
         "unit": "msec",
         "name": "time_step_min",
-        "default": 0.5
+        "default": 0.1
       },
       {
         "title": "Time Step Maximum",
         "type": "number",
         "unit": "msec",
         "name": "time_step_max",
-        "default": 2.0
+        "default": 0.1
       },
       {
         "title": "Writing Step",
         "type": "number",
         "unit": "msec",
         "name": "writing_step",
-        "default": 2.0
+        "default": 0.1
       },
       {
         "title": "Genetic Variation",
