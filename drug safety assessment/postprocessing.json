@@ -48,15 +48,25 @@
           { "label": "O'Hara-Rudy static (2011) endocardium", "value": "ORd-static_endo" },
           { "label": "O'Hara-Rudy static (2011) epicardium", "value": "ORd-static_epi" },
           { "label": "O'Hara-Rudy static (2011) mid-myocardium", "value": "ORd-static_myo" },
+          { "label": "O'Hara-Rudy static (2011) endocardium with Land et al. contraction model", "value": "ORd-static_Land_endo" },
+          { "label": "O'Hara-Rudy static (2011) epicardium with Land et al. contraction model", "value": "ORd-static_Land_epi" },
+          { "label": "O'Hara-Rudy static (2011) mid-myocardium with Land et al. contraction model", "value": "ORd-static_Land_myo" },
           { "label": "O'Hara-Rudy IKr-dynamic (2017) endocardium", "value": "CiPAORdv1.0_endo" },
           { "label": "O'Hara-Rudy IKr-dynamic (2017) epicardium", "value": "CiPAORdv1.0_epi" },
           { "label": "O'Hara-Rudy IKr-dynamic (2017) mid-myocardium", "value": "CiPAORdv1.0_myo" },
+          { "label": "O'Hara-Rudy IKr-dynamic (2017) endocardium with Land et al. contraction model", "value": "CiPAORdv1.0_Land_endo" },
+          { "label": "O'Hara-Rudy IKr-dynamic (2017) epicardium with Land et al. contraction model", "value": "CiPAORdv1.0_Land_epi" },
+          { "label": "O'Hara-Rudy IKr-dynamic (2017) mid-myocardium with Land et al. contraction model", "value": "CiPAORdv1.0_Land_myo" },
           { "label": "Tomek et al. (2019) endocardium", "value": "ToR-ORd_endo" },
           { "label": "Tomek et al. (2019) epicardium", "value": "ToR-ORd_epi" },
           { "label": "Tomek et al. (2019) mid-myocardium", "value": "ToR-ORd_myo" },
+          { "label": "Tomek et al. (2019) endocardium with Land et al. contraction model", "value": "ToR-ORd_Land_endo" },
+          { "label": "Tomek et al. (2019) epicardium with Land et al. contraction model", "value": "ToR-ORd_Land_epi" },
+          { "label": "Tomek et al. (2019) mid-myocardium with Land et al. contraction model", "value": "ToR-ORd_Land_myo" },
           { "label": "Tomek model with dynamic chloride (2020) endocardium", "value": "ToR-ORd-dynCl_endo" },
           { "label": "Tomek model with dynamic chloride (2020) epicardium", "value": "ToR-ORd-dynCl_epi" },
-          { "label": "Tomek model with dynamic chloride (2020) mid-myocardium", "value": "ToR-ORd-dynCl_myo" }
+          { "label": "Tomek model with dynamic chloride (2020) mid-myocardium", "value": "ToR-ORd-dynCl_myo" },
+          { "label": "Grandi et al. 2011 Human Atrial Action Potential and Ca2+ Model", "value": "Grandi" }
         ]
       },
       {
@@ -108,7 +118,7 @@
         "type": "text",
         "tooltip": "Comma-separated list of concentrations (e.g., 3237,6474) in nM used for simulation.",
         "name": "drug_concentrations",
-        "default": "3237,6474"
+        "default": "3237,6474,9711,12948"
       },
       {
         "title": "Hill File",
@@ -125,7 +135,10 @@
         "cell_model": [
           "CiPAORdv1.0_endo",
           "CiPAORdv1.0_epi",
-          "CiPAORdv1.0_myo"
+          "CiPAORdv1.0_myo",
+          "CiPAORdv1.0_Land_endo",
+          "CiPAORdv1.0_Land_epi",
+          "CiPAORdv1.0_Land_myo",
         ]
       }
     }
