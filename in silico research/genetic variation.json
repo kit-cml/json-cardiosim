@@ -7,13 +7,13 @@
         "type": "number",
         "unit": "msec",
         "name": "cycle_length",
-        "default": 2000.0
+        "default": 500.0
       },
       {
         "title": "Paces",
         "type": "number",
         "name": "number_pacing",
-        "default": 1000
+        "default": 10
       },
       {
         "title": "Pacing Write Count",
@@ -105,64 +105,88 @@
     ]
   },
   {
-    "title": "Drug Parameters",
-    "items": [
-      {
-        "title": "Drug Name",
-        "type": "text",
-        "name": "drug_name",
-        "default": "quinidine"
-      },
-      {
-        "title": "Drug Concentrations",
-        "type": "text",
-        "tooltip": "Comma-separated list of concentrations (e.g., 3237,6474) in nM used for simulation.",
-        "name": "drug_concentrations",
-        "default": "0"
-      },
-      {
-        "title": "Hill File",
-        "type": "file-picker",
-        "name": "hill_file",
-        "default": "./chantest_hill/quinidine/IC50_samples10.csv"
-      },
-      {
-      "title": "hERG File",
-      "type": "file-picker",
-      "name": "herg_file",
-      "default": "./chantest_herg/quinidine/boot_pars10.csv",
-      "visibleIf": {
-        "cell_model": [
-          "CiPAORdv1.0_endo",
-          "CiPAORdv1.0_epi",
-          "CiPAORdv1.0_myo"
-        ]
-      }
-    }
-    ]
-  },
-  {
-    "title": "Simulation Setting",
-    "items": [
-      {
-        "title": "Simulation Type",
-        "type": "combo-box",
-        "name": "simulation_type",
-        "default": "cpu",
-        "options": [
-          { "label": "CPU", "value": "cpu" },
-          { "label": "GPU", "value": "gpu" }
-        ]
-      },
-      {
-        "title": "Number of CPU",
-        "type": "number",
-        "name": "number_of_cpu",
-        "default": 10,
-        "visibleIf": {
-          "simulation_type": "cpu"
-        }
-      }
-    ]
+	"title": "Ionic Conductance Scaling",
+	"items": [
+		{
+			"title": "GKs",
+			"type": "stepper",
+			"name": "gks_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "GKr",
+			"type": "stepper",
+			"name": "gkr_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "GK1",
+			"type": "stepper",
+			"name": "gk1_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "Gto",
+			"type": "stepper",
+			"name": "gto_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "PCa",
+			"type": "stepper",
+			"name": "pca_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "GNa",
+			"type": "stepper",
+			"name": "gna_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "GNaL",
+			"type": "stepper",
+			"name": "gnal_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "PNab",
+			"type": "stepper",
+			"name": "pnab_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "PCab",
+			"type": "stepper",
+			"name": "pcab_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		},
+		{
+			"title": "Gncx",
+			"type": "stepper",
+			"name": "gncx_scale",
+			"default": 1,
+			"min": "0.001",
+			"max": "1000"
+		}
+	]
   }
 ]
